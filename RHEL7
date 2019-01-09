@@ -3,24 +3,22 @@
 d <device>: Devices configured
 c <Connections>: Connections configured
 
-#subscription-manager
-register: register server to redhat account
-subscription-manager
-repos --list
-repos --enable <repo>
+STATIC IP
+nano /etc/sysconfig/network-scripts/ifcfg-<device>
+IPADDR,NETMASK,GATEWAY
 
 #YUM
+update
 repolist
+list
+list installed
+list available
+install <pkg>
+search <string>
+update <pkg>
+erase <pkg>
 
 RPM
-
-getsebool -a
-
-#VI
-
-JOBS
-BG
-FG
 
 FREE: shows RAM usage
 VMSTAT <refreshrate>: Show usage and refresh
@@ -32,12 +30,24 @@ TOP:Show usage of running processs
 PIDOF <process>: Find PID of running process
 KILL <pid>: Kill a process
 
-SYSTEMCTL:
+SYSTEMCTL: start, stop, status <.service>
+
 FIREWALL-CMD
+--get-default-zone
+--get-active-zones
+sudo firewall-cmd --list-all
+--get-services
+--zone=public --add-service=http
+--zone=public --add-port=5000/tcp
+--zone=public --list-ports
+--zone=public --list-services
 
 chmod
 chown
-
+getsebool -a
+JOBS
+BG
+FG
 ausearch
 restorecon
 getenforce
