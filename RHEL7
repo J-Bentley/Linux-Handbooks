@@ -1,1 +1,25 @@
+NMCLI
+-p : Pretty output
+d <device>: Devices configured
+c <Connections>: Connections configured
 
+YUM
+
+VI: Text editor
+
+JOBS
+BG
+FG
+
+FREE: shows RAM usage
+VMSTAT <refreshrate>: Show usage and refresh
+
+PS: Show processes running on USER
+PS axu: Show system processes
+
+TOP:Show usage of running processs
+PIDOF <process>: Find PID of running process
+KILL <pid>: Kill a process
+
+SYSTEMCTL:
+FIREWALL-CMD
