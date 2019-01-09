@@ -1,13 +1,13 @@
-#NMCLI
--p : Pretty output
+NMCLI
+-p: Pretty output
 d <device>: Devices configured
 c <Connections>: Connections configured
 
 STATIC IP
 nano /etc/sysconfig/network-scripts/ifcfg-<device>
-IPADDR,NETMASK,GATEWAY
+set the IPADDR, NETMASK & GATEWAY
 
-#YUM
+YUM
 update
 repolist
 list
@@ -35,13 +35,18 @@ SYSTEMCTL: start, stop, status <.service>
 FIREWALL-CMD
 --get-default-zone
 --get-active-zones
-sudo firewall-cmd --list-all
---get-services
---zone=public --add-service=http
---zone=public --add-port=5000/tcp
+--list-all
+--zone=public --add-service=<service>
+--zone=public --add-port=<port>/tcp
 --zone=public --list-ports
 --zone=public --list-services
 
+
+CHANGE HOSTNAME
+sudo nano /etc/sysconfig/network
+sudo nano /etc/hosts
+hostnamectl set-hostname <name>
+ 
 chmod
 chown
 getsebool -a
