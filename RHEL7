@@ -1,11 +1,22 @@
-NMCLI
+#NMCLI
 -p : Pretty output
 d <device>: Devices configured
 c <Connections>: Connections configured
 
-YUM
+#subscription-manager
+register: register server to redhat account
+subscription-manager
+repos --list
+repos --enable <repo>
 
-VI: Text editor
+#YUM
+repolist
+
+RPM
+
+getsebool -a
+
+#VI
 
 JOBS
 BG
@@ -23,3 +34,11 @@ KILL <pid>: Kill a process
 
 SYSTEMCTL:
 FIREWALL-CMD
+
+chmod
+chown
+
+ausearch
+restorecon
+getenforce
+
