@@ -18,7 +18,8 @@ search <string>
 update <pkg>
 erase <pkg>
 
-RPM
+INSTALL JAVA
+sudo yum install java-1.8.0-openjdk-devel
 
 FREE: shows RAM usage
 VMSTAT <refreshrate>: Show usage and refresh
