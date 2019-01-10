@@ -123,6 +123,7 @@ NEOFETCH
 sudo add-apt-repository ppa:dawidd0811/neofetch
 sudo apt update && sudo apt install neofetch
 config file: ${HOME}/.config/neofetch/config.conf
+disable motd display by editing these two files: /etc/pam.d/login, /etc/pam.d/sshd, comment out the line that has "pam_motd" 
 
 MISC
 df -h
