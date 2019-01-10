@@ -119,6 +119,11 @@ NMAP
 nmap <targetip> -p <port[-port2]>
 nmap 192.168.0.0/24 -sn
 
+NEOFETCH
+sudo add-apt-repository ppa:dawidd0811/neofetch
+sudo apt update && sudo apt install neofetch
+config file: ${HOME}/.config/neofetch/config.conf
+
 MISC
 df -h
 pinky
