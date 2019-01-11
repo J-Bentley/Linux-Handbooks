@@ -1,7 +1,9 @@
-SSH / FTP
-- Disable root login
+SSH
 - NON-standard port
-- SSH Keys, disable password
+- SSH Keys, disable password login
+
+FTP
+- NON-standard port
 
 FIREWALL
  - ufw allow from localnetwork/24
