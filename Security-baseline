@@ -1,10 +1,16 @@
-SSH
-- NON-standard port
-- SSH Keys, disable password login
+UBUNTU 16:
+ SSH
+ - NON-standard port
+ - SSH Keys
+ - Disable password authentication, keys only
+ - Disable root login (openssh default)
+ FTP
+  - Disable entirely ?
+ SFTP
+ - NON-standard port
+ - Disable root login
+ FIREWALL
+  - ufw allow from localnetwork/24
+  - 
+  Multi-Factor Authentication via libpam-google-authenticator
 
-FTP
-- NON-standard port
-
-FIREWALL
- - ufw allow from localnetwork/24
- - 
