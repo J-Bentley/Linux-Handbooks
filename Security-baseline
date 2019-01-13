@@ -11,6 +11,7 @@ UBUNTU 16:
  - Disable root login
  FIREWALL
   - ufw allow from localnetwork/24
-  - 
+  - ufw allow <port>
+  
   Multi-Factor Authentication via libpam-google-authenticator
 
