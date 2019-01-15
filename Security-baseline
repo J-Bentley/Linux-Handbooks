@@ -10,7 +10,9 @@ UBUNTU 16:
  - NON-standard port
  - Disable root login
  FIREWALL
-  - ufw allow from localnetwork/24
+  - sudo ufw default deny incoming
+  - sudo ufw default allow outgoing
+  - ufw allow from localnetwork/24 [to any port <>]
   - ufw allow <port>
   
   Multi-Factor Authentication via libpam-google-authenticator
