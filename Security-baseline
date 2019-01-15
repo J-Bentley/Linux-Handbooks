@@ -1,11 +1,22 @@
-UBUNTU 16:
+Proxmox Debian VE:
+  - SSL for hypervisor web server
+  - Fail2Ban listening on hypvisor webserver interface
+  - NO openssh-server / vsftp installed (DISABLES sftp, ftp, ssh, services!)
+  - UFW:
+      - ufw allow from localnetwork/24
+      - ufw default deny incoming
+      - ufw default allow outgoing
+      - deny port 20-22 (?)
+  - Multi-factor Authentication via OTP (?)
+      
+UBUNTU 16 VM:
  SSH
  - NON-standard port
  - SSH Keys
  - Disable password authentication, keys only
  - Disable root login (openssh default)
  FTP
-  - Disable entirely ?
+  - Disable entirely via uninstalling vsftp, use sftp via openssh-server
  SFTP
  - NON-standard port
  - Disable root login
@@ -14,6 +25,7 @@ UBUNTU 16:
   - sudo ufw default allow outgoing
   - ufw allow from localnetwork/24 [to any port <>]
   - ufw allow <port>
-  
-  Multi-Factor Authentication via libpam-google-authenticator
+FAIL2BAN
+  - On SSH / FTP interface
+Multi-Factor Authentication via libpam-google-authenticator
 
