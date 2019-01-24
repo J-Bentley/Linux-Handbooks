@@ -21,16 +21,15 @@ erase <pkg>
 INSTALL JAVA
 sudo yum install java-1.8.0-openjdk-devel
 
+MONITORING
+top
 FREE: shows RAM usage
 VMSTAT <refreshrate>: Show usage and refresh
-
 PS: Show processes running on USER
 PS axu: Show system processes
-
 TOP:Show usage of running processs
 PIDOF <process>: Find PID of running process
 KILL <pid>: Kill a process
-
 SYSTEMCTL: start, stop, status <.service>
 
 FIREWALL-CMD
@@ -42,12 +41,12 @@ FIREWALL-CMD
 --zone=public --list-ports
 --zone=public --list-services
 
-
 CHANGE HOSTNAME
 sudo nano /etc/sysconfig/network
 sudo nano /etc/hosts
 hostnamectl set-hostname <name>
- 
+
+MISC
 chmod
 chown
 getsebool -a
