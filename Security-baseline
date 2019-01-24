@@ -2,6 +2,7 @@ Proxmox Debian VE:
   - SSL for hypervisor web server
   - Fail2Ban listening on hypvisor webserver interface
   - NO openssh-server / vsftp installed (DISABLES sftp, ftp, ssh, services!)
+  - Root is only user/group
   - UFW:
       - ufw allow from localnetwork/24
       - ufw default deny incoming
@@ -10,6 +11,7 @@ Proxmox Debian VE:
   - Multi-factor Authentication via OTP (?)
       
 UBUNTU 16 VM:
+- Put VM in DMZ if externally facing(?)
  SSH
  - NON-standard port
  - SSH Keys
