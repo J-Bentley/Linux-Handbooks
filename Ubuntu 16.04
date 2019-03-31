@@ -9,6 +9,17 @@ FTP (not needed for SFTP!!)
 sudo apt-get install vsftpd
 sudo nano /etc/vsftpd.conf
 
+FDISK
+fdisk -l
+fdisk /dev/sdx
+d: delete partition
+p: list partition
+n: new partition
+w: write changes
+
+pvcreate /dev/sdx[y] (include partion number)
+vgcreate name /dev/sdx[y]
+
 JAVA
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt install oracle-java8-installer
