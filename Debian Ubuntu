@@ -3,7 +3,6 @@ ubuntu-drivers devices: find model/driver (ex: GTX 450/nvidia-304)
 sudo apt-get install <model>
 sudo ubuntu-drivers autoinstall
 
-
 SSH
 sudo apt-get install openssh-server
 sudo nano /etc/ssh/sshd_config
