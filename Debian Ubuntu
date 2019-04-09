@@ -1,3 +1,7 @@
+GPU DRIVER INSTALL
+ubuntu-drivers devices: find model/driver (ex: GTX 450/nvidia-304)
+sudo apt-get install <model>
+sudo ubuntu-drivers autoinstall
 
 
 SSH
@@ -5,7 +9,7 @@ sudo apt-get install openssh-server
 sudo nano /etc/ssh/sshd_config
 sudo nano .ssh/authorized_keys
 
-FTP (not needed for SFTP!!)
+FTP (not needed for SFTP!)
 sudo apt-get install vsftpd
 sudo nano /etc/vsftpd.conf
 
@@ -33,6 +37,12 @@ ctrl+c to cancel, leave console window open
 SNAP
 apt-get install snap
 snap install <pkg>
+
+DISCORD
+sudo snap install discord --classic
+
+MOONLIGHT
+sudo snap install moonlight-qt
 
 LM-SENSORS
 apt-get install lm-sensors
