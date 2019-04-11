@@ -8,6 +8,16 @@ sudo apt-get install openssh-server
 sudo nano /etc/ssh/sshd_config
 sudo nano .ssh/authorized_keys
 
+SAMBA
+apt-get install samba
+sudo nano /etc/samba/smb.conf
+
+FSTAB
+sudo nano /etc/fstab
+sudo apt-get install cifs-utils
+//remote-ip/share /mount/directory cifs guest,uid=1000,iocharset=utf8 0 0
+sudo mount -a
+
 FTP (not needed for SFTP!)
 sudo apt-get install vsftpd
 sudo nano /etc/vsftpd.conf
@@ -65,23 +75,16 @@ sudo dpkg -i plexmediaserver*.deb
 sudo systemctl enable plexmediaserver.service
 sudo systemctl start/stop/status plexmediaserver.service
 
-PLEX UNINSTALL Steps:
+PLEX UNINSTALL:
 1)Run 
 sudo apt-get purge plexmediaserver
-
-
 2) Remove bulk of plex files
 sudo rm -rf /var/lib/plexmediaserver
-
-
 3) Remove plex user (very important!)
 sudo userdel plex
-
-
 4) Remove both /etc/init/plexmediaserver.conf and /etc/default/plexmediaserver
 sudo rm /etc/init/plexmediaserver.conf
 sudo rm /etc/default/plexmediaserver
-
 
 STATIC IP
 sudo nano /etc/network/interfaces
@@ -92,7 +95,7 @@ iface ens33 inet static
     gateway 192.168.0.1
     dns-nameservers 192.168.0.1
 
-FIREWALL
+UFW
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
 sudo ufw status
@@ -100,12 +103,6 @@ sudo ufw enable
 sudo ufw allow from 192.168.0.0/24
 sudo ufw allow/deny <port>
 sudo ufw show added
-
-PERMISSIONS
-sudo su - username
-sudo usermod -aG sudo username
-sudo chmod +x file
-sudo chown user:group directory
 
 SCREEN
 screen -S <id>
