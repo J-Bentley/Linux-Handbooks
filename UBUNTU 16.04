@@ -11,14 +11,13 @@ sudo nano .ssh/authorized_keys
 SAMBA
 apt-get install samba
 sudo nano /etc/samba/smb.conf
-
-FSTAB
+Mount remote directory with FSTAB/cifs:
 sudo nano /etc/fstab
 sudo apt-get install cifs-utils
 //remote-ip/share /mount/directory cifs guest,uid=1000,iocharset=utf8 0 0
 sudo mount -a
 
-FTP (not needed for SFTP!)
+FTP (not needed for SFTP)
 sudo apt-get install vsftpd
 sudo nano /etc/vsftpd.conf
 
