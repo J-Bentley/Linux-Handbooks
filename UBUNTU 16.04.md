@@ -13,7 +13,7 @@
 * sudo nano .ssh/authorized_keys
 
 #### FTP
-*Deprecated: Use SFTP via openssh *
+*Deprecated: Use SFTP via openssh*
 * sudo apt-get install vsftpd
 * sudo nano /etc/vsftpd.conf
 
@@ -47,7 +47,7 @@
 #### SYSTEMCTL
 * systemctl status/start/stop <service>.service
 * systemctl enable/disable <service>.service: starts service at boot
-* systemctl list-unit-files | grep enabled: shows enabled services 
+* systemctl list-unit-files | grep enabled: shows enabled services  
 *Enabled doesn't mean it's running & running doesn't mean it's enabled*
 
 #### PACKAGE MGMT
