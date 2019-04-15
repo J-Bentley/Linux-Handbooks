@@ -1,11 +1,11 @@
 #### STATIC IP
 * sudo nano /etc/network/interfaces
 * iface ens33 inet static
-    * address 192.168.0.
-    * netmask 255.255.255.0
-    * network 192.168.0.0
-    * gateway 192.168.0.1
-    * dns-nameservers 192.168.0.1
+    * address
+    * netmask 
+    * network
+    * gateway 
+    * dns-nameservers 
 
 #### SSH / SFTP
 * sudo apt-get install openssh-server
@@ -13,15 +13,14 @@
 * sudo nano .ssh/authorized_keys
 
 #### FTP
-* Deprecated: Use SFTP via openssh *
+*Deprecated: Use SFTP via openssh *
 * sudo apt-get install vsftpd
 * sudo nano /etc/vsftpd.conf
 
 #### UFW
-* sudo ufw default deny incoming
-* sudo ufw default allow outgoing
 * sudo ufw status
 * sudo ufw enable
+* sudo ufw default allow/deny incoming/outgoing
 * sudo ufw allow from 192.168.0.0/24
 * sudo ufw allow/deny <port>
 * sudo ufw show added
@@ -43,13 +42,13 @@
 * screen -S <id>
 * ctrl+a+d: detach
 * screen -r <id>
-* /var/run/screen/s-$USER: screen sessions
+*/var/run/screen/s-$USER: txt file for each session*
 
 #### SYSTEMCTL
 * systemctl status/start/stop <service>.service
 * systemctl enable/disable <service>.service: starts service at boot
 * systemctl list-unit-files | grep enabled: shows enabled services 
-* (Enabled doesn't mean it's running & running doesn't mean it's enabled.) *
+*Enabled doesn't mean it's running & running doesn't mean it's enabled*
 
 #### PACKAGE MGMT
 * sudo apt-cache search <program>
@@ -60,15 +59,6 @@
 * -r <file.deb>: uninstall
 * -i: install
 * -l: list 
-
-#### PYTHON
-* sudo add-apt-repository ppa:jonathonf/python-3.6
-* sudo apt-get install python3.6
-* sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
-* sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 2
-* sudo update-alternatives --config python3
-* python3 -V
-* [see:http://ubuntuhandbook.org/index.php/2017/07/install-python-3-6-1-in-ubuntu-16-04-lts/] * 
 
 #### PIP
 * sudo apt install python3-pip
@@ -114,7 +104,7 @@
 * sudo add-apt-repository ppa:dawidd0811/neofetch
 * sudo apt update && sudo apt install neofetch
 * config file: ${HOME}/.config/neofetch/config.conf
-* disable motd display by editing these two files: /etc/pam.d/login, /etc/pam.d/sshd, comment out the line that has "pam_motd" * 
+*Disable motd display by editing these two files: /etc/pam.d/login, /etc/pam.d/sshd, comment out the line that has "pam_motd"* 
 
 #### GPU DRIVER INSTALL
 * ubuntu-drivers devices: find model/driver (ex: GTX 450/nvidia-304)
@@ -130,7 +120,7 @@ or
 #### SAMBA
 * apt-get install samba
 * sudo nano /etc/samba/smb.conf
-    * Mount remote directory with FSTAB/cifs:
+##### Mount remote directory with FSTAB/cifs:
     * sudo nano /etc/fstab
     * sudo apt-get install cifs-utils
     * //remote-ip/share /mount/directory cifs guest,uid=1000,iocharset=utf8 0 0
