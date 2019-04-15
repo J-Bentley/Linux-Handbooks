@@ -13,7 +13,9 @@
 * deny port 20-22
 #### Multi-factor Authentication
 * OATP
-      
+
+
+
 ## UBUNTU 16
 * Put VM in DMZ if externally facing(?)
  #### SSH
