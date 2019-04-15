@@ -1,11 +1,11 @@
 ## STATIC IP
 * sudo nano /etc/network/interfaces
 * iface ens33 inet static
-    address 192.168.0.
-    netmask 255.255.255.0
-    network 192.168.0.0
-    gateway 192.168.0.1
-    dns-nameservers 192.168.0.1
+> address 192.168.0.
+> netmask 255.255.255.0
+> network 192.168.0.0
+> gateway 192.168.0.1
+> dns-nameservers 192.168.0.1
 
 SSH
 sudo apt-get install openssh-server
