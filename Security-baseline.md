@@ -29,5 +29,5 @@
 * ufw allow from localnetwork/24
 #### FAIL2BAN
 * On SSH / FTP interface
-### Multi-Factor Authentication via libpam-google-authenticator
+#### Multi-Factor Authentication via libpam-google-authenticator
 
