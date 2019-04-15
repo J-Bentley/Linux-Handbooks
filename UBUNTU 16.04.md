@@ -55,7 +55,7 @@
 * sudo apt list --installed | grep -i <program>
 * sudo apt-remove --purge <program>
 
-####DPKG
+#### DPKG
 * -r <file.deb>: uninstall
 * -i: install
 * -l: list 
@@ -81,7 +81,7 @@
 * /usr/local/bin/noip2
 
 #### PLEX
-* wget https://downloads.plex.tv/plex-media-server/1.5.5.3634-995f1dead/plexmediaserver_1.5.5.3634-995f1dead_amd64.deb
+* wget <latestfile>.deb
 * sudo dpkg -i plexmediaserver*.deb
 * sudo systemctl enable plexmediaserver.service
 * sudo systemctl start/stop/status plexmediaserver.service
@@ -120,7 +120,7 @@ or
 #### SAMBA
 * apt-get install samba
 * sudo nano /etc/samba/smb.conf
-##### Mount remote directory with FSTAB/cifs:
+* Mount remote directory with FSTAB/cifs:
     * sudo nano /etc/fstab
     * sudo apt-get install cifs-utils
     * //remote-ip/share /mount/directory cifs guest,uid=1000,iocharset=utf8 0 0
