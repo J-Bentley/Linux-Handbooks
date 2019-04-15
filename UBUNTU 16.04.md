@@ -1,4 +1,4 @@
-## STATIC IP
+#### STATIC IP
 * sudo nano /etc/network/interfaces
 * iface ens33 inet static
     * address 192.168.0.
