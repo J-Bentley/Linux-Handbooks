@@ -16,7 +16,7 @@
 * sudo apt-get install vsftpd
 * sudo nano /etc/vsftpd.conf
 
-####UFW
+#### UFW
 * sudo ufw default deny incoming
 * sudo ufw default allow outgoing
 * sudo ufw status
