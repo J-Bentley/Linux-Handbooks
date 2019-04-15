@@ -7,12 +7,13 @@
     * gateway 192.168.0.1
     * dns-nameservers 192.168.0.1
 
-#### SSH
+#### SSH / SFTP
 * sudo apt-get install openssh-server
 * sudo nano /etc/ssh/sshd_config
 * sudo nano .ssh/authorized_keys
 
-#### FTP (not needed for SFTP)
+#### FTP
+* Deprecated: Use SFTP via openssh *
 * sudo apt-get install vsftpd
 * sudo nano /etc/vsftpd.conf
 
