@@ -1,3 +1,4 @@
+A security baseline is a list of OS configurations that must be made on a *per OS basis* meaning, all ubuntu VMs must be setup as defined below and any new OS's used must have a secure baseline created and implemented.
  
 ## Proxmox
 * NO openssh-server / vsftp (DISABLES sftp, ftp, ssh)
