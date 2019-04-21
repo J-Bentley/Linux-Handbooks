@@ -20,12 +20,12 @@
 ```sudo nano /etc/vsftpd.conf```
 
 #### UFW
-```sudo ufw status```
-```sudo ufw enable```
-```sudo ufw default allow/deny incoming/outgoing```
-```sudo ufw allow from 192.168.0.0/24```
-```sudo ufw allow/deny <port>```
-```sudo ufw show added```
+```sudo ufw status```  
+```sudo ufw enable```  
+```sudo ufw default allow/deny incoming/outgoing```  
+```sudo ufw allow from 192.168.0.0/24```  
+```sudo ufw allow/deny <port>```  
+```sudo ufw show added```  
 
 #### FDISK
 * fdisk -l
