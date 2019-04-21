@@ -1,5 +1,5 @@
 #### ALIASES
-* alias updateme='sudo apt-get update && sudo apt-get upgrade -y'
+```alias updateme='sudo apt-get update && sudo apt-get upgrade -y```
 #### STATIC IP
 ```sudo nano /etc/network/interfaces```
 * iface ens33 inet static
@@ -10,22 +10,22 @@
     * dns-nameservers 
 
 #### SSH / SFTP
-* sudo apt-get install openssh-server
-* sudo nano /etc/ssh/sshd_config
-* sudo nano .ssh/authorized_keys
+```sudo apt-get install openssh-server```
+```sudo nano /etc/ssh/sshd_config```
+```sudo nano .ssh/authorized_keys```
 
 #### FTP
 *Deprecated: Use SFTP via openssh*
-* sudo apt-get install vsftpd
-* sudo nano /etc/vsftpd.conf
+```sudo apt-get install vsftpd```
+```sudo nano /etc/vsftpd.conf```
 
 #### UFW
-* sudo ufw status
-* sudo ufw enable
-* sudo ufw default allow/deny incoming/outgoing
-* sudo ufw allow from 192.168.0.0/24
-* sudo ufw allow/deny <port>
-* sudo ufw show added
+```sudo ufw status```
+```sudo ufw enable```
+```sudo ufw default allow/deny incoming/outgoing```
+```sudo ufw allow from 192.168.0.0/24```
+```sudo ufw allow/deny <port>```
+```sudo ufw show added```
 
 #### FDISK
 * fdisk -l
