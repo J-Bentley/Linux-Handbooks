@@ -1,7 +1,7 @@
 #### ALIASES
 * alias updateme='sudo apt-get update && sudo apt-get upgrade -y'
 #### STATIC IP
-* sudo nano /etc/network/interfaces
+```sudo nano /etc/network/interfaces```
 * iface ens33 inet static
     * address
     * netmask 
