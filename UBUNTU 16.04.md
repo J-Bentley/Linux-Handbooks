@@ -10,9 +10,9 @@
     * dns-nameservers 
 
 #### SSH / SFTP
-```sudo apt-get install openssh-server```
-```sudo nano /etc/ssh/sshd_config```
-```sudo nano .ssh/authorized_keys```
+```sudo apt-get install openssh-server```  
+```sudo nano /etc/ssh/sshd_config```  
+```sudo nano .ssh/authorized_keys```  
 
 #### FTP
 *Deprecated: Use SFTP via openssh*
