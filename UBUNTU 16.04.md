@@ -15,9 +15,10 @@
 ```sudo nano .ssh/authorized_keys```  
 
 #### FTP
-*Deprecated: Use SFTP via openssh*
-```sudo apt-get install vsftpd```
-```sudo nano /etc/vsftpd.conf```
+*Deprecated: Use SFTP via openssh*  
+
+```sudo apt-get install vsftpd```  
+```sudo nano /etc/vsftpd.conf```  
 
 #### UFW
 ```sudo ufw status```  
