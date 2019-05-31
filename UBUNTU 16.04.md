@@ -42,9 +42,9 @@
 * sudo apt install default-jre
 
 ### SCREEN
-* screen -S <id>
-* ctrl+a+d: detach
-* screen -r <id>
+* screen -S <>  
+* ctrl+a+d: detach  
+* screen -r <id>  
 */var/run/screen/s-$USER: txt file for each session*
 
 #### SYSTEMCTL
