@@ -23,6 +23,7 @@ A security baseline is a list of OS configurations that must be made on a *per O
 * NON-standard port
 * Disable password authentication, SSH keys only
 #### SFTP
+* SFTP via openssh-server only, no FTP via vsftpd
 * NON-standard port
 * Disable root login
 #### UFW
