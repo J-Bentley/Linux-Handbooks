@@ -28,7 +28,7 @@ A security baseline is a list of OS configurations that must be made on a *per O
 * Disable root login
 #### UFW
 * sudo ufw default deny incoming
-* ufw allow from localnetwork/24
+* ufw allow from 192.168.0.0/24
 #### FAIL2BAN
 * On SSH / FTP interface
 #### Multi-Factor Authentication via libpam-google-authenticator
