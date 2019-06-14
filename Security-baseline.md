@@ -4,7 +4,7 @@ A security baseline is a list of OS configurations that must be made on a *per O
 * NO openssh-server / vsftp (DISABLES sftp, ftp, ssh)
 * Root is only user/group
 #### SSL
-* on 8006
+* on proxmox's port 8006
 #### Fail2Ban
 * listening on 8006
 #### UFW
