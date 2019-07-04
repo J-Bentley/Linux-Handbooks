@@ -64,6 +64,9 @@
 * -l: list 
 
 #### PIP
+* sudo nano /etc/apt/sources.list
+   * Add universe to end of lines
+* sudo apt update 
 * sudo apt install python3-pip
 * pip3 --version
 
@@ -109,7 +112,8 @@ allow updating with apt-get:
 
 #### NEOFETCH
 * sudo add-apt-repository ppa:dawidd0811/neofetch
-* sudo apt update && sudo apt install neofetch
+* sudo apt update && sudo apt ins
+tall neofetch
 * config file: ${HOME}/.config/neofetch/config.conf
 *Disable motd display by editing these two files: /etc/pam.d/login, /etc/pam.d/sshd, comment out the line that has "pam_motd"* 
 
