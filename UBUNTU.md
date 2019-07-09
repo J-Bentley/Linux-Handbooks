@@ -29,51 +29,51 @@
 ```sudo ufw show added```  
 
 #### FDISK
-* fdisk -l
-* fdisk /dev/sdx
-* d: delete partition
-* p: list partition
-* n: new partition
-* w: write changes
+```fdisk -l```
+```fdisk /dev/sdx```
+```d: delete partition```
+```p: list partition```
+```n: new partition```
+```w: write changes```
 
 #### JAVA
-* sudo add-apt-repository ppa:webupd8team/java
-* sudo apt install oracle-java8-installer
-* sudo apt install default-jre
+```sudo add-apt-repository ppa:webupd8team/java```
+```sudo apt install oracle-java8-installer```
+```sudo apt install default-jre```
 
 ### SCREEN
-* screen -S <>  
-* ctrl+a+d: detach  
-* screen -r <id>  
+```screen -S <>```
+```ctrl+a+d: detach```
+```screen -r <id>```
 */var/run/screen/s-$USER: txt file for each session*
 
 #### SYSTEMCTL
-* systemctl status/start/stop <service>.service
-* systemctl enable/disable <service>.service: starts service at boot
-* systemctl list-unit-files | grep enabled: shows enabled services  
+```systemctl status/start/stop <service>.service```
+```systemctl enable/disable <service>.service: starts service at boot```
+```systemctl list-unit-files | grep enabled: shows enabled services```
 *Enabled doesn't mean it's running & running doesn't mean it's enabled*
 
 #### PACKAGE MGMT
-* sudo apt-cache search <program>
-* sudo apt list --installed | grep -i <program>
-* sudo apt-remove --purge <program>
+```sudo apt-cache search <program>```
+```sudo apt list --installed | grep -i <program>```
+```sudo apt-remove --purge <program>```
 
 #### DPKG
-* -r <file.deb>: uninstall
-* -i: install
-* -l: list 
+```-r <file.deb>: uninstall```
+```-i: install```
+```-l: list```
 
 #### PIP
-* sudo nano /etc/apt/sources.list
+```sudo nano /etc/apt/sources.list```
    * Add universe to end of lines
-* sudo apt update 
-* sudo apt install python3-pip
-* pip3 --version
+```sudo apt update ```
+```sudo apt install python3-pip```
+``` pip3 --version```
 
 #### LM-SENSORS
-* apt-get install lm-sensors
-* sensors detect
-* sensors / watch sensors
+```apt-get install lm-sensors```
+```sensors detect```
+``` sensors / watch sensors```
 
 #### NO-IP
 * cd /usr/local/src/
@@ -105,7 +105,9 @@ allow updating with apt-get:
     * 4) Remove both /etc/init/plexmediaserver.conf and /etc/default/plexmediaserver
     * sudo rm /etc/init/plexmediaserver.conf
     * sudo rm /etc/default/plexmediaserver
-
+#### IPERF
+* Client
+* Server
 #### NMAP
 * nmap <targetip> -p <port[-port2]>
 * nmap 192.168.0.0/24 -sn
