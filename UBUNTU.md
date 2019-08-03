@@ -14,12 +14,6 @@
 ```sudo nano /etc/ssh/sshd_config```  
 ```sudo nano .ssh/authorized_keys```  
 
-#### FTP
-*Deprecated: Use SFTP via openssh*  
-
-```sudo apt-get install vsftpd```  
-```sudo nano /etc/vsftpd.conf```  
-
 #### UFW
 ```sudo ufw status```  
 ```sudo ufw enable```  
