@@ -22,13 +22,15 @@
 ```sudo ufw allow/deny <port>```  
 ```sudo ufw show added```  
 
-#### FDISK
-```fdisk -l```
-```fdisk /dev/sdx```
-```d: delete partition```
-```p: list partition```
-```n: new partition```
-```w: write changes```
+#### GNOME
+
+#### FDISK  
+```fdisk -l```  
+```fdisk /dev/sdx```  
+```d: delete partition```  
+```p: list partition```  
+```n: new partition```  
+```w: write changes```  
 
 #### JAVA
 ```sudo add-apt-repository ppa:webupd8team/java```
