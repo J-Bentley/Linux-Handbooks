@@ -32,44 +32,44 @@
 ```n: new partition```  
 ```w: write changes```  
 
-#### JAVA
-```sudo add-apt-repository ppa:webupd8team/java```
-```sudo apt install oracle-java8-installer```
-```sudo apt install default-jre```
+#### JAVA  
+```sudo add-apt-repository ppa:webupd8team/java```  
+```sudo apt install oracle-java8-installer```  
+```sudo apt install default-jre```  
 
-### SCREEN
-```screen -S <>```
-```ctrl+a+d: detach```
-```screen -r <id>```
-*/var/run/screen/s-$USER: txt file for each session*
+### SCREEN  
+```screen -S <>```  
+```ctrl+a+d: detach```  
+```screen -r <id>```  
+*/var/run/screen/s-$USER: txt file for each session*  
 
-#### SYSTEMCTL
-```systemctl status/start/stop <service>.service```
-```systemctl enable/disable <service>.service: starts service at boot```
-```systemctl list-unit-files | grep enabled: shows enabled services```
-*Enabled doesn't mean it's running & running doesn't mean it's enabled*
+#### SYSTEMCTL  
+```systemctl status/start/stop <service>.service```  
+```systemctl enable/disable <service>.service: starts service at boot```  
+```systemctl list-unit-files | grep enabled: shows enabled services```  
+*Enabled doesn't mean it's running & running doesn't mean it's enabled*  
 
-#### PACKAGE MGMT
-```sudo apt-cache search <program>```
-```sudo apt list --installed | grep -i <program>```
-```sudo apt-remove --purge <program>```
+#### PACKAGE MGMT  
+```sudo apt-cache search <program>```  
+```sudo apt list --installed | grep -i <program>```  
+```sudo apt-remove --purge <program>```  
 
-#### DPKG
-```-r <file.deb>: uninstall```
-```-i: install```
-```-l: list```
+#### DPKG  
+```-r <file.deb>: uninstall```  
+```-i: install```  
+```-l: list```  
 
 #### PIP
-```sudo nano /etc/apt/sources.list```
-   * Add universe to end of lines
-```sudo apt update ```
-```sudo apt install python3-pip```
-``` pip3 --version```
+```sudo nano /etc/apt/sources.list```  
+   * Add universe to end of lines  
+```sudo apt update ```  
+```sudo apt install python3-pip```  
+``` pip3 --version```  
 
-#### LM-SENSORS
-```apt-get install lm-sensors```
-```sensors detect```
-``` sensors / watch sensors```
+#### LM-SENSORS  
+```apt-get install lm-sensors```  
+```sensors detect```  
+``` sensors / watch sensors```  
 
 #### NO-IP
 * cd /usr/local/src/
