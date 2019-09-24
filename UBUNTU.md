@@ -24,7 +24,7 @@
 ```sudo ufw show added```  
 
 #### GNOME
-
+``` ubuntu 16 gnome tweaks go here :p```
 #### FDISK  
 ```fdisk -l```  
 ```fdisk /dev/sdx```  
