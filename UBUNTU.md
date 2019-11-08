@@ -32,9 +32,10 @@
 ```p: list partition```  
 ```n: new partition```  
 ```w: write changes```  
-Format: sudo mkfs.ext4 /dev/sdx
-Mount: sudo mount /dev/sda/ /mnt/sda
-Reboot mount: sudo nano /etc/fstab /dev/sdb     /mnt/sdb      ext4        defaults      0       0
+```Format Disk: sudo mkfs.ext4 /dev/sdx```  
+```Mount Disk: sudo mount /dev/sda/ /mnt/sda```  
+```Mount on reboot via fstab: sudo nano /etc/fstab /dev/sdb```  
+```/mnt/sdb      ext4        defaults      0       0  ```  
 
 #### JAVA  
 ```sudo add-apt-repository ppa:webupd8team/java```  
