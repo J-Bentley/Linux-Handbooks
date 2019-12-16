@@ -104,6 +104,34 @@
 ```  sudo apt install gcc```  
 ```  /usr/local/bin/noip2 -C```  
 ```  /usr/local/bin/noip2```  
+# Simple No-ip.com Dynamic DNS Updater
+#
+# By Nathan Giesbrecht (http://nathangiesbrecht.com)
+#
+# 1) Install binary as described in no-ip.com's source file (assuming results in /usr/local/bin)
+# 2) Run sudo /usr/local/bin/noip2 -C to generate configuration file
+# 3) Copy this file noip2.service to /etc/systemd/system/
+# 4) Execute `sudo systemctl daemon-reload`
+# 5) Execute `sudo systemctl enable noip2`
+# 6) Execute `sudo systemctl start noip2`
+#
+# systemd supports lots of fancy features, look here (and linked docs) for a full list:
+#   http://www.freedesktop.org/software/systemd/man/systemd.exec.html
+
+[Unit]
+Description=No-ip.com dynamic IP address updater
+After=network.target
+After=syslog.target
+
+[Install]
+WantedBy=multi-user.target
+Alias=noip.service
+
+[Service]
+# Start main service
+ExecStart=/usr/local/bin/noip2
+Restart=always
+Type=forking
  
 #### PLEX 
 ```  wget <latestfile>.deb```  
