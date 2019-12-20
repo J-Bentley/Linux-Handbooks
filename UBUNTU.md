@@ -57,20 +57,19 @@
    
 #### JAVA  
 ```sudo add-apt-repository ppa:webupd8team/java```  
-```sudo apt install oracle-java8-installer```  
 ```sudo apt install default-jre```  
 
 ### SCREEN  
-```screen -S <>```  
-```ctrl+a+d: detach```  
+```screen -S <id>```  
+```ctrl+a+d: to detach from session```  
 ```screen -r <id>```  
-*/var/run/screen/s-$USER: txt file for each session*  
+*/var/run/screen/s-$USER: a txt file is created for each session*  
 
 #### SYSTEMCTL  
 ```systemctl status/start/stop <service>.service```  
 ```systemctl enable/disable <service>.service: starts service at boot```  
 ```systemctl list-unit-files | grep enabled: shows enabled services```  
-*Enabled doesn't mean it's running & running doesn't mean it's enabled*  
+*Enabled doesn't mean it's running & running doesn't mean it's enabled!*  
 
 #### PACKAGE MGMT  
 ```sudo apt-cache search <program>```  
@@ -82,7 +81,7 @@
 ```-i: install```  
 ```-l: list```  
 
-#### PIP
+#### PIP (preinstalled on 18.04)
 ```sudo nano /etc/apt/sources.list```  
    * Add universe to end of lines  
 ```sudo apt update ```  
@@ -104,19 +103,19 @@
 ```  sudo apt install gcc```  
 ```  /usr/local/bin/noip2 -C```  
 ```  /usr/local/bin/noip2```  
-# Simple No-ip.com Dynamic DNS Updater
-#
-# By Nathan Giesbrecht (http://nathangiesbrecht.com)
-#
-# 1) Install binary as described in no-ip.com's source file (assuming results in /usr/local/bin)
-# 2) Run sudo /usr/local/bin/noip2 -C to generate configuration file
-# 3) Copy this file noip2.service to /etc/systemd/system/
-# 4) Execute `sudo systemctl daemon-reload`
-# 5) Execute `sudo systemctl enable noip2`
-# 6) Execute `sudo systemctl start noip2`
-#
-# systemd supports lots of fancy features, look here (and linked docs) for a full list:
-#   http://www.freedesktop.org/software/systemd/man/systemd.exec.html
+Simple No-ip.com Dynamic DNS Updater
+
+By Nathan Giesbrecht (http://nathangiesbrecht.com)
+
+1) Install binary as described in no-ip.com's source file (assuming results in /usr/local/bin)
+2) Run sudo /usr/local/bin/noip2 -C to generate configuration file
+3) Copy this file noip2.service to /etc/systemd/system/
+4) Execute `sudo systemctl daemon-reload`
+5) Execute `sudo systemctl enable noip2`
+6) Execute `sudo systemctl start noip2`
+
+systemd supports lots of fancy features, look here (and linked docs) for a full list:
+http://www.freedesktop.org/software/systemd/man/systemd.exec.html
 
 [Unit]
 Description=No-ip.com dynamic IP address updater
@@ -128,7 +127,7 @@ WantedBy=multi-user.target
 Alias=noip.service
 
 [Service]
-# Start main service
+Start main service
 ExecStart=/usr/local/bin/noip2
 Restart=always
 Type=forking
