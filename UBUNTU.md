@@ -11,12 +11,17 @@
     * dns-nameservers  
     
 ```sudo nano /etc/netplan/01-netcfg.yaml```  
-* network:  
+* network:
   * version: 2  
   * renderer: networkd  
   * ethernets:  
     * ens3:  
-      * dhcp4: yes  
+      * dhcp4: no  
+      * addresses:  
+        * - 192.168.121.199/24  
+      * gateway4: 192.168.121.1  
+      * nameservers:  
+          * addresses: [8.8.8.8, 1.1.1.1]  
 
 #### SSH / SFTP
 ```sudo apt-get install openssh-server```  
