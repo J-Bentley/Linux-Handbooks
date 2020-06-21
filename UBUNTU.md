@@ -9,6 +9,13 @@
     * network
     * gateway 
     * dns-nameservers 
+```sudo nano /etc/netplan/01-netcfg.yaml```  
+* network:  
+  * version: 2  
+  * renderer: networkd  
+  * ethernets:  
+    * ens3:  
+      * dhcp4: yes  
 
 #### SSH / SFTP
 ```sudo apt-get install openssh-server```  
