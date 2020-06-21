@@ -9,6 +9,7 @@
     * network
     * gateway 
     * dns-nameservers  
+    
 ```sudo nano /etc/netplan/01-netcfg.yaml```  
 * network:  
   * version: 2  
