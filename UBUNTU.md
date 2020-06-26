@@ -169,6 +169,7 @@ or
     ``` sudo apt-get install cifs-utils```  
     ```  //remote-ip/share /mount/directory cifs guest,uid=1000,iocharset=utf8 0 0```  
     ```  sudo mount -a```  
+    ``` df -h```
   
 #### SNAP  
 ```  apt-get install snap```   
