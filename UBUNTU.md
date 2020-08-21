@@ -27,6 +27,7 @@
 ```sudo apt-get install openssh-server```  
 ```sudo nano /etc/ssh/sshd_config```  
 ```sudo nano .ssh/authorized_keys```  
+```ssh / sftp user@hostname```
 
 #### UFW
 ```sudo ufw status```  
