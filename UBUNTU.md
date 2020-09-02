@@ -6,8 +6,8 @@ Server: create directory if doesn't exist and enter the public key in ~/.ssh/aut
 ```chmod 600 ~/.ssh/authorized_keys```  
 ```chown $USER:$USER ~/.ssh -R```  
 uncomment ``` AuthorizedKeysFile    /.ssh/authorized_keys``` in ```/etc/ssh/sshd_config```  
-```sudo service ssh restart```
-For troubleshooting ``` tail -f /var/log/auth.log```
+```sudo service ssh restart```  
+For troubleshooting ``` tail -f /var/log/auth.log```  
 
 #### ALIASES  
 ```sudo nano .bashrc```  
