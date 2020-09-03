@@ -16,20 +16,14 @@ A security baseline is a list of OS configurations that must be made on a *per O
 * OATP
 
 
-
-## UBUNTU 16
-* Put VM in DMZ if externally facing(?)
+## UBUNTU 19
  #### SSH
-* NON-standard port
-* Disable password authentication, SSH keys only
+* Disable password authentication
+* SSH public/private keys on hostname basis
 #### SFTP
-* SFTP via openssh-server only, no FTP via vsftpd
-* NON-standard port
+* SFTP via openssh-server only, NO FTP via vsftpd
 * Disable root login
 #### UFW
 * sudo ufw default deny incoming
 * ufw allow from 192.168.0.0/24
-#### FAIL2BAN
-* On SSH / FTP interface
-#### Multi-Factor Authentication via libpam-google-authenticator
 
