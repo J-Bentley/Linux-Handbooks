@@ -1,4 +1,4 @@
-#### PUBLIC KEY AUTHENTICATION (PUTTY)  
+#### PUBLIC KEY AUTHENTICATION (Putty on Windows)  
 Client: generate a key pair with puttygen (rsa-ssh2, min bit length: 1024 bits)  
 Client: save private key as ``` rsa_id-hostname.ppk```  and load the private key in the PuTTY profile via ```connection>ssh>auth```   
 Server: create directory if doesn't exist and enter the public key in ```~/.ssh/authorized_keys```  in one line (ssh-rsa your_public_key) with no more than once space between ssh-rsa and your key)  
