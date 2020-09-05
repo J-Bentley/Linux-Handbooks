@@ -1,30 +1,31 @@
-A security baseline is a list of OS configurations that must be made on a *per OS basis* meaning, all ubuntu VMs must be setup as defined below and any new OS's used must have a secure baseline created and implemented.
+A security baseline is a list of OS configurations that must be made on a *per OS basis* before the OS should be put in production/exposed to public. Meaning, all ubuntu VMs must be setup as defined below and any new OS's used must have a secure baseline created and implemented.
  
 ## Proxmox
-* NO openssh-server / vsftp (DISABLES sftp, ftp, ssh)
-* Root is only user/group
+* NO openssh-server / vsftp (this ensures SFTP, FTP, SSH are not installed, should still deny packets tho)
+* Root is only user/group.
 #### SSL
-* on proxmox's port 8006
+* Proxmox's web panel port 8006.
 #### Fail2Ban
-* listening on 8006
+* Listening on Proxmox's web panel port 8006.
 #### UFW
-* ufw default deny incoming
-* ufw default allow outgoing
-* deny port 20-22 (only use web panel)
-* ufw allow from localnetwork/24
+* `sudo ufw default deny incoming`
+* `sudo ufw default allow outgoing`
+* `sudo ufw deny port 20-22` (only use web panel for Proxmox access)
+* `sudo ufw allow from localnetwork/24`
 #### Multi-factor Authentication
-* OATP
+* OATP.
 
 
 ## UBUNTU 19
  #### SSH
-* Disable password authentication
-* SSH public/private keys on hostname basis
+* Disable password authentication.
+* SSH public/private keys created per hostname.
 #### SFTP
-* SFTP via openssh-server only, NO FTP via vsftpd
-* Disable root login
+* SFTP via openssh-server only, NO FTP via vsftpd.
+* Disable root login.
+* Triple check anonymous-login is disabled.
 #### UFW
-* sudo ufw default deny incoming
-* sudo ufw default allow outgoing
-* ufw allow from 192.168.0.0/24
+* `sudo ufw default deny incoming`
+* `sudo ufw default allow outgoing`
+* `sudo ufw allow from localnetwork/24`
 
