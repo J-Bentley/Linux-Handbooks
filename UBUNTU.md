@@ -17,12 +17,12 @@ Note: Putty profiles are picky, ensure you are loading the profile and saving th
 
 #### STATIC IP
 ```sudo nano /etc/network/interfaces```
-* iface eth0 inet static
-    * address
-    * netmask 
-    * network
-    * gateway 
-    * dns-nameservers  
+iface eth0 inet static
+    address
+    netmask 
+    network
+    gateway 
+    dns-nameservers  
     
 ```sudo nano /etc/netplan/01-netcfg.yaml```  
 * network:
