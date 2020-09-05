@@ -25,7 +25,6 @@ Note: Putty profiles are picky, ensure you are loading the profile and saving th
 Config: ```sudo nano /etc/ssh/sshd_config```  
 (Hardening tips can be found in [security-baseline](https://github.com/J-Bentley/Linux-Handbooks/blob/master/Security-baseline.md))  
 * Show config settings:``ssh -T``  
-* Show SSh
 
 
 #### UFW
