@@ -8,10 +8,10 @@ A security baseline is a list of OS configurations that must be made on a *per O
 #### Fail2Ban
 * listening on 8006
 #### UFW
-* ufw allow from localnetwork/24
 * ufw default deny incoming
 * ufw default allow outgoing
-* deny port 20-22
+* deny port 20-22 (only use web panel)
+* ufw allow from localnetwork/24
 #### Multi-factor Authentication
 * OATP
 
