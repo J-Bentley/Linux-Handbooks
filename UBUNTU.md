@@ -16,26 +16,9 @@ Note: Putty profiles are picky, ensure you are loading the profile and saving th
 ```alias updateme='sudo apt-get update && sudo apt-get upgrade -y```  
 
 #### STATIC IP
-```sudo nano /etc/network/interfaces```
-iface eth0 inet static
-    address
-    netmask 
-    network
-    gateway 
-    dns-nameservers  
-    
-```sudo nano /etc/netplan/01-netcfg.yaml```  
-network:
-  version: 2  
-  renderer: networkd  
-  ethernets:  
-    ens3:  
-      dhcp4: no  
-      addresses:  
-        - 192.168.0.x/24  
-      gateway4: 192.168.0.1  
-      nameservers:  
-          addresses: [8.8.8.8, 1.1.1.1]  
+16 :```sudo nano /etc/network/interfaces```     
+19 :```sudo nano /etc/netplan/01-netcfg.yaml```    
+
 
 #### SSH / SFTP
 ```sudo apt-get install openssh-server```  
