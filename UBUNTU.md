@@ -25,17 +25,17 @@ iface eth0 inet static
     dns-nameservers  
     
 ```sudo nano /etc/netplan/01-netcfg.yaml```  
-* network:
-  * version: 2  
-  * renderer: networkd  
-  * ethernets:  
-    * ens3:  
-      * dhcp4: no  
-      * addresses:  
-        * - 192.168.0.x/24  
-      * gateway4: 192.168.0.1  
-      * nameservers:  
-          * addresses: [8.8.8.8, 1.1.1.1]  
+network:
+  version: 2  
+  renderer: networkd  
+  ethernets:  
+    ens3:  
+      dhcp4: no  
+      addresses:  
+        - 192.168.0.x/24  
+      gateway4: 192.168.0.1  
+      nameservers:  
+          addresses: [8.8.8.8, 1.1.1.1]  
 
 #### SSH / SFTP
 ```sudo apt-get install openssh-server```  
