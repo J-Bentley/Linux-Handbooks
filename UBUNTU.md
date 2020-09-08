@@ -49,7 +49,7 @@ Config: ```sudo nano /etc/ssh/sshd_config```
 ```Mount on reboot via fstab: sudo nano /etc/fstab /dev/sdb```  
 ```/mnt/sdb      ext4        defaults      0       0  ```  
 
-#### OPENVPN WITH PRIVATE INTERNET ACCESS  
+#### OPENVPN WITH PIA VPN 
 https://www.thedallemagnes.com/2016/08/26/installing-private-internet-access-with-openvpn-on-ubuntu-server/
    
 #### JAVA  
