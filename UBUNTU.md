@@ -49,23 +49,8 @@ Config: ```sudo nano /etc/ssh/sshd_config```
 ```Mount on reboot via fstab: sudo nano /etc/fstab /dev/sdb```  
 ```/mnt/sdb      ext4        defaults      0       0  ```  
 
-#### PRIVATE INTERNET ACCESS (headless)  
-```sudo apt-get install openvpn```  
-```cd /etc/openvpn```  
-```sudo wget https://www.privateinternetaccess.com/openvpn/openvpn.zip```  
-```sudo unzip openvpn.zip```  
-```sudo cp Netherlands.ovpn pia-nl.conf```  
-```sudo nano pia-nl.conf```  
-```Change:```  
-```auth-user-pass```  
-```To:```  
-```auth-user-pass login.conf```  
-```sudo vi login.conf```  
-```yourPIAusername```  
-```yourPIApassword```  
-```sudo vi /etc/default/openvpn```  
-```AUTOSTART="pia-nl"```  
-```wget -q -O - ipecho.net/plain```  
+#### OPENVPN WITH PRIVATE INTERNET ACCESS  
+https://www.thedallemagnes.com/2016/08/26/installing-private-internet-access-with-openvpn-on-ubuntu-server/
    
 #### JAVA  
 ```sudo add-apt-repository ppa:webupd8team/java```  
