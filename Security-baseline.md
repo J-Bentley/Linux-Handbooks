@@ -19,8 +19,8 @@ A security baseline is a list of OS configurations that must be made on a *per O
 ## UBUNTU 19
  #### SSH  
 * Config file: `/etc/ssh/sshd_config`  
-* Enable authorized keys file: uncomment `AuthorizedKeysFile /.ssh/authorized_keys`  
-* Disable password authentication: `PasswordAuthentication no`  
+* Use SSH private/public keys via `~/.ssh/authorized_keys`.    
+* `PasswordAuthentication no`  
 * `X11Forwarding no`  
 * `IgnoreRhosts yes`  
 * `useDNS yes`  
