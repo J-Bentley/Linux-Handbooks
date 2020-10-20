@@ -5,8 +5,9 @@ Server: create directory if doesn't exist and paste the public key in `~/.ssh/au
 ```chmod 700 ~/.ssh```  
 ```chmod 600 ~/.ssh/authorized_keys```  
 ```chown $USER:$USER ~/.ssh -R```  
-uncomment ``` AuthorizedKeysFile    /.ssh/authorized_keys``` in ```/etc/ssh/sshd_config```  
-In ```sudo nano /etc/ssh/sshd_config``` uncomment and save as ```PasswordAuthentication no```  
+in ```/etc/ssh/sshd_config```  
+uncomment ``` AuthorizedKeysFile    /.ssh/authorized_keys```  
+uncomment and modify line to be ```PasswordAuthentication no```  
 ```sudo service ssh restart```  
 For troubleshooting ``` tail -f /var/log/auth.log```  
 Note: Putty profiles are picky, ensure you are loading the profile and saving the changes you make. If you are having problems, this is prob it.    
