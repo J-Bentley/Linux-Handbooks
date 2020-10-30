@@ -8,7 +8,7 @@ Server: create directory if doesn't exist and paste the public key in `~/.ssh/au
 In ```/etc/ssh/sshd_config```:  
 - uncomment ``` AuthorizedKeysFile    /.ssh/authorized_keys```  
 - uncomment and modify line to be ```PasswordAuthentication no```  
-- more hardening tips in security baseline.
+- more hardening tips in security baseline.  
 ```sudo service ssh restart```  
 For troubleshooting ``` tail -f /var/log/auth.log```  
 Note: Putty profiles are picky, ensure you are loading the profile and saving the changes you make. If you are having problems, this is prob it.    
