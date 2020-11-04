@@ -150,6 +150,13 @@ or
 #### SAMBA
 ```  apt-get install samba```  
 ```  sudo nano /etc/samba/smb.conf```  
+`path = /media/PLEX`  
+`writeable = yes`  
+`browseable = yes`  
+`public = yes`  
+`create mask = 0777`  
+`directory mask = 0777`  
+`force user = plex  
 * Mount remote directory with FSTAB/cifs:  
     ```  sudo nano /etc/fstab```   
     ``` sudo apt-get install cifs-utils```  
