@@ -10,6 +10,3 @@
 * pvcreate /dev/sdX[Y] (include partion number)
 * vgcreate newdrivename /dev/sdX[Y]
 * Datacentre > Stroage > Add > LVM
-
-### pveperf
-* test system perforamnce
