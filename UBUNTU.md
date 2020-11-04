@@ -154,9 +154,10 @@ or
 `writeable = yes`  
 `browseable = yes`  
 `public = yes`  
-`create mask = 0777`  
-`directory mask = 0777`  
-`guest ok = yes`
+`guest only = yes`  
+`guest ok = yes`  
+`sudo chmod -R 777 /dir/to/share`  
+
 * Mount remote directory with FSTAB/cifs:  
     ```  sudo nano /etc/fstab```   
     ``` sudo apt-get install cifs-utils```  
