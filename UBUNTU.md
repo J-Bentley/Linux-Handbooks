@@ -181,7 +181,9 @@ or
 ```  whoami```  
 ```  watch <cmd>: does command every 2 seconds```  
 ```  pwd```  
-``` adduser```  
+``` adduser <username>```  
+`usermod -aG sudo <username>`  
+`su - <username>`  
 ```  deluser```  
   
 #### MONITORING  
