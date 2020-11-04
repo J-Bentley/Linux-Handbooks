@@ -46,8 +46,10 @@ Config: ```sudo nano /etc/ssh/sshd_config```
 ```Format Disk: sudo mkfs.ext4 /dev/sdx```  
 ```Mount Disk: sudo mount /dev/sda/ /mnt/sda```  
 ```Mount on reboot via fstab: sudo nano /etc/fstab /dev/sdb```  
-```/mnt/sdb      ext4        defaults      0       0  ```  
-
+```/mnt/sdb      ext4        defaults      0       0  ```
+  
+#### Headless Tranmission with Web GUI  
+https://help.ubuntu.com/community/TransmissionHowTo  
 #### OPENVPN WITH PIA VPN 
 https://www.thedallemagnes.com/2016/08/26/installing-private-internet-access-with-openvpn-on-ubuntu-server/
    
