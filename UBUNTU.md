@@ -156,7 +156,7 @@ or
 `public = yes`  
 `create mask = 0777`  
 `directory mask = 0777`  
-`force user = plex  
+`guest ok = yes`
 * Mount remote directory with FSTAB/cifs:  
     ```  sudo nano /etc/fstab```   
     ``` sudo apt-get install cifs-utils```  
