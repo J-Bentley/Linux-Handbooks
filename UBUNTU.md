@@ -159,8 +159,9 @@ or
 `sudo chmod -R 777 /dir/to/share`  
 
 * Mount remote directory with FSTAB/cifs:  
-    ```  sudo nano /etc/fstab```   
+`IF in PVE container, ensure not unprivildged!`  
     ``` sudo apt-get install cifs-utils```  
+    ```  sudo nano /etc/fstab```   
     ```  //remote-ip/share /mount/directory cifs guest,uid=1000,iocharset=utf8 0 0```  
     ```  sudo mount -a```  
     ``` df -h```
