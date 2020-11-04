@@ -21,15 +21,12 @@ Note: Putty profiles are picky, ensure you are loading the profile and saving th
 16 :```sudo nano /etc/network/interfaces```     
 18 :```sudo nano /etc/netplan/*-netcfg.yaml```    
  - ```sudo netplan --debug apply```    
-
-
-
+ 
 #### SSH / SFTP
 ```sudo apt-get install openssh-server```  
 Config: ```sudo nano /etc/ssh/sshd_config```  
 (Hardening tips can be found in [security-baseline](https://github.com/J-Bentley/Linux-Handbooks/blob/master/Security-baseline.md))  
 * Show config settings:``ssh -T``  
-
 
 #### UFW
 ```sudo ufw status```  
@@ -39,8 +36,6 @@ Config: ```sudo nano /etc/ssh/sshd_config```
 ```sudo ufw allow/deny <port>```  
 ```sudo ufw show added```  
 
-#### GNOME
-``` ubuntu 16 gnome tweaks go here :p```
 #### FDISK  
 ```fdisk -l```  
 ```fdisk /dev/sdx```  
@@ -106,6 +101,7 @@ https://www.thedallemagnes.com/2016/08/26/installing-private-internet-access-wit
 ```  /usr/local/bin/noip2 -C```  
 ```  /usr/local/bin/noip2```  
 ``` Auto start on boot:https://gist.github.com/NathanGiesbrecht/da6560f21e55178bcea7fdd9ca2e39b5```  
+
 #### PLEX 
 ```  wget <latestfile>.deb```  
 ```  sudo dpkg -i plexmediaserver*.deb```  
@@ -129,6 +125,7 @@ allow updating with apt-get:
 #### IPERF  
 ``` Client```  
 ``` Server```  
+
 #### NMAP
 ```  nmap <targetip> -p <port[-port2]>```  
 ```  nmap 192.168.0.0/24 -sn```  
@@ -185,4 +182,3 @@ or
 ```iotop```  
 ``` top | grep <program>```  
 ``` sudo tshark <port> and not arp```  
-  
