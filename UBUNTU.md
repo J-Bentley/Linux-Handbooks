@@ -49,6 +49,7 @@ Config: ```sudo nano /etc/ssh/sshd_config```
 ```/mnt/sdb      ext4        defaults      0       0  ```
   
 #### Headless Tranmission with Web GUI  
+`sudo apt-get install software-properties-common`  
 https://help.ubuntu.com/community/TransmissionHowTo  
 #### OPENVPN WITH PIA VPN 
 https://www.thedallemagnes.com/2016/08/26/installing-private-internet-access-with-openvpn-on-ubuntu-server/
