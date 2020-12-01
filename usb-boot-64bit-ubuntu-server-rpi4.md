@@ -1,15 +1,24 @@
-Update Bootloader and enable USB BOOT:  
-Requisites: SD Card and reader, [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
-- Write "EEPROM Boot Recovery" image to an SD card via Raspberry Pi Imager.
-- Start RPI, should show a green screen on monitor and/or flash green indicator LED's if update was successful and USB booting is now enabled as a feature.
-- Remove SD card from RPI4, you only need a bootable USB plugged in now!
+By booting from USB instead of SD card, we can increase reliability over time in our storage device and take full advantage of the independant USB 3.1 channel in the RPI 4.
+Requisites: 
+- SD Card
+- SD reader
+- USB stick
+- Keyboard
+- Monitor
+- Install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+- Install [SD Card Formatter](https://www.sdcard.org/downloads/formatter/)
+- Download & extract [Ubuntu Server 64-bit for RPI4](https://www.raspberrypi.org/forums/viewtopic.php?t=278791)
+
+Update Bootloader and enable USB Booting:  
+- Quick-format your SD Card using SD Card Formatter software.
+- Open Raspberry Pi Imager, click "Choose OS", go to Misc Utilities, write "EEPROM Boot Recovery" OS to the SD card.
+- Plug in SD card and monitor. Power on RPI 4, should show a green image on monitor and/or flash green indicator LED's if bootloader update was successful. Red screen if not.
+- Remove SD card from RPI 4, you only need a bootable USB plugged in now!
 - ([Source](https://webtechie.be/post/2020-09-29-64bit-raspbianos-on-raspberrypi4-with-usbboot/))  
 
 Install 64-bit Ubuntu Server to RPI4:  
-Requisites: Monitor & keyboard.
-- Format a USB with FAT32 via [SD Card Formatter]().
-- Download [Ubuntu Server 64-bit for RPI4](https://www.raspberrypi.org/forums/viewtopic.php?t=278791) and extract it.
-- Using [Raspberry Pi Imager](https://www.raspberrypi.org/software/), select custom image and write the extracted img file to the the your formatted USB.
+- Format USB stick with FAT32 using SD Card Formatter software.
+- Open Raspberry Pi Imager, click "Choose OS", select custom image and write the extracted 64bit ubuntu server "RPI USB Boot" .img file to the the your formatted USB.
 - Plug in the USB and power on RPI4 without an SD card.
 - Login with `ubuntu` as user and password.
 - You will then be prompted to change default ubuntu user password. See optionl steps for how to create a new user, delete default ubuntu user and change the hostname.
