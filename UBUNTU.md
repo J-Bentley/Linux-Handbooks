@@ -19,7 +19,8 @@ Note: Putty profiles are picky, ensure you are loading the profile and saving th
 
 #### STATIC IP
 16 :```sudo nano /etc/network/interfaces```     
-18 :```sudo nano /etc/netplan/*-netcfg.yaml```    
+18 - 20 :  
+ - ```sudo nano /etc/netplan/*-netcfg.yaml```  
  - ```sudo netplan --debug apply```    
  
 #### SSH / SFTP
