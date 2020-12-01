@@ -1,5 +1,6 @@
 By booting from USB instead of SD card, we can increase reliability over time in our storage device and take full advantage of the independant USB 3.1 channel in the RPI 4.
-Requisites: 
+
+Pre-requisites: 
 - SD Card
 - SD reader
 - USB stick
