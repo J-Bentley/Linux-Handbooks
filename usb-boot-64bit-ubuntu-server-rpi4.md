@@ -11,7 +11,7 @@ Pre-requisites:
 - Download & extract [Ubuntu Server 64-bit for RPI4](https://www.raspberrypi.org/forums/viewtopic.php?t=278791)
 
 Update Bootloader and enable USB Booting:  
-- Plug into PC and Quick-format your SD Card using SD Card Formatter software.
+- Plug SD card into the reader and reader into PC, then Quick-format your SD Card using SD Card Formatter software.
 - Open Raspberry Pi Imager, click "Choose OS", go to Misc Utilities, write "EEPROM Boot Recovery" OS to the SD card.
 - Plug in SD card and monitor. Power on RPI 4, should show a green image on monitor and/or flash green indicator LED's if bootloader update was successful. Red screen if not.
 - Remove SD card from RPI 4, you only need a bootable USB plugged in now!
