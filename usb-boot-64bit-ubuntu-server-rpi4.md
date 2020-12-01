@@ -26,7 +26,7 @@ Install 64-bit Ubuntu Server to RPI4:
 11) Verify available disk space on USB: `df -h`
 12) Verify 64-bit: `uname -a`
 
-OPTIONAL:  
+OPTIONAL:
 1) Add a new user: `sudo adduser jordan`  
 2) Make the new user a sudo user: `sudo usermod -aG sudo jordan`
 3) Login to new user: `su - jordan`
