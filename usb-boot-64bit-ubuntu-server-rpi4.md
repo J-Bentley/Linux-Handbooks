@@ -26,8 +26,7 @@ Install 64-bit Ubuntu Server to RPI4:
 - Verify 64-bit: `uname -a`
 
 OPTIONAL:  
-Requisites: Monitor & keyboard.
-- Add a new user: `sudo adduser jordan`
+- Add a new user: `sudo adduser jordan`  
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
 - Login to new user: `su - jordan`
 - Verify sudo priviledges of new user & reboot (if RPI4 restarts = success): `sudo reboot`
