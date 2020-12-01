@@ -24,7 +24,7 @@ Install 64-bit Ubuntu Server to RPI4:
 9) Login with `ubuntu` as user and password.
 10) You will then be prompted to change default ubuntu user password. See optionl steps for how to create a new user, delete default ubuntu user and change the hostname.
 11) Verify available disk space on USB: `df -h`
-12) Verify 64-bit: `uname -a`
+12) Verify 64-bit: `uname -a`  
 
 OPTIONAL:
 1) Add a new user: `sudo adduser jordan`  
