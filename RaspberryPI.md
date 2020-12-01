@@ -1,0 +1,12 @@
+Update Bootloader and enable Boot from USB if no SD card is present: [Source](https://webtechie.be/post/2020-09-29-64bit-raspbianos-on-raspberrypi4-with-usbboot/)
+- Write "EEPROM Boot Recovery" image to an SD card via [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+- Start pi, should show green screen and flash green leds if update was successful and USB booting is now enabled as a feature.
+- Boot [img](https://www.raspberrypi.org/forums/viewtopic.php?t=278791) to usb, power on pi.
+- Login with credentials ubuntu:ubuntu 
+- will be prompted to change default ubuntu user password, it doesnt matter, make it easy as we will delete this user account and make our own.
+- Add a new user: `sudo adduser username`
+- Make the new user a sudo user: `sudo usermod -aG sudo username`
+- login to new user: `su - username`
+- verify sudo priviledges with new user: `sudo`
+- delete default ubuntu user account: `sudo deluser --remove-home userNameHere`
+- verify user is deleted: `id ubuntu` & `grep '^ubuntu' /etc/passwd`
