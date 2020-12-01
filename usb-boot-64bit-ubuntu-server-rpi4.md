@@ -31,8 +31,8 @@ OPTIONAL (create a new user, delete default user and change hostname):
 - Add a new user: `sudo adduser jordan`  
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
 - Login to new user: `su - jordan`
-- Verify sudo priviledges of new user & reboot (if RPI4 restarts = success): `sudo reboot`
-- Delete default ubuntu user account: `sudo deluser --remove-home ubuntu`
+- Verify sudo priviledges of new user & reboot RPI 4 (if RPI4 restarts = success): `sudo reboot`
+- Log back in with the new account and delete default ubuntu user account: `sudo deluser --remove-home ubuntu`
 - Verify ubuntu user is deleted: `id ubuntu` & verify password is deleted `grep '^ubuntu' /etc/passwd` (no output = success)
 - Type `sudo nano /etc/hostname` and change the default hostname to your preffered hostname.
 - Find any occurance of the default hostname in `/etc/hosts` and change it to what is in `/etc/hostname`.
