@@ -16,6 +16,7 @@ Requisites: Monitor & keyboard.
 - Verify 64-bit: `uname -a`
 
 OPTIONAL:
+Requisites: Monitor & keyboard.
 - Add a new user: `sudo adduser jordan`
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
 - Login to new user: `su - jordan`
