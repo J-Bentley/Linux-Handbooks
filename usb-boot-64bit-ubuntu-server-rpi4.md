@@ -18,15 +18,16 @@ Update Bootloader and enable USB Booting:
 - ([Source](https://webtechie.be/post/2020-09-29-64bit-raspbianos-on-raspberrypi4-with-usbboot/))  
 
 Install 64-bit Ubuntu Server to RPI4:
-- Plug your USB stick into your PC, then open SD Card Formatter and Quick-format your USB stick. Ensure it is formatted as ExFat, not NTFS. Format using Windows if so.  
-- Open Raspberry Pi Imager, click "Choose OS", select custom image and write the extracted 64bit ubuntu server "RPI USB Boot" .img file to your formatted USB.  
-- Plug in the USB and power on RPI4 without an SD card.  
-- Login with `ubuntu` as user and password.  
-- You will then be prompted to change default ubuntu user password. See optionl steps for how to create a new user, delete default ubuntu user and change the hostname.  
-- Verify available disk space on USB: `df -h`  
-- Verify 64-bit: `uname -a`    
+- Plug your USB stick into your PC, then open SD Card Formatter and Quick-format your USB stick. Ensure it is formatted as ExFat, not NTFS. Format using Windows if so.
+- Open Raspberry Pi Imager, click "Choose OS", select custom image and write the extracted 64bit ubuntu server "RPI USB Boot" .img file to your formatted USB.
+- Eject the USB stick from your PC and plug in the newly imaged USB stick, mini-HDMI and power cord to the RPI4. Power on without an SD card inserted, just the USB stick.
+- Login with `ubuntu` as user and password.
+- You will then be prompted to change default ubuntu user password.
+- Verify available disk space on USB: `df -h`
+- Verify 64-bit: `uname -a`
 
-OPTIONAL:
+OPTIONAL (create a new user, delete default user and change hostname):
+- To do the following steps over SSH, plug in an ethernet cable and issue `ip addr` to find your ip address then log in with ubuntu:ubuntu using PuTTy.
 - Add a new user: `sudo adduser jordan`  
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
 - Login to new user: `su - jordan`
