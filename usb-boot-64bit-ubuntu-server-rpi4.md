@@ -18,13 +18,13 @@ Update Bootloader and enable USB Booting:
 5) ([Source](https://webtechie.be/post/2020-09-29-64bit-raspbianos-on-raspberrypi4-with-usbboot/))  
 
 Install 64-bit Ubuntu Server to RPI4:
-6) Plug your USB stick into your PC, then open SD Card Formatter and Quick-format your USB stick. Ensure it is formatted as ExFat, not NTFS. Format using Windows if so.
-7) Open Raspberry Pi Imager, click "Choose OS", select custom image and write the extracted 64bit ubuntu server "RPI USB Boot" .img file to your formatted USB.
-8) Plug in the USB and power on RPI4 without an SD card.
-9) Login with `ubuntu` as user and password.
-10) You will then be prompted to change default ubuntu user password. See optionl steps for how to create a new user, delete default ubuntu user and change the hostname.
-11) Verify available disk space on USB: `df -h`
-12) Verify 64-bit: `uname -a`  
+6) Plug your USB stick into your PC, then open SD Card Formatter and Quick-format your USB stick. Ensure it is formatted as ExFat, not NTFS. Format using Windows if so.  
+7) Open Raspberry Pi Imager, click "Choose OS", select custom image and write the extracted 64bit ubuntu server "RPI USB Boot" .img file to your formatted USB.  
+8) Plug in the USB and power on RPI4 without an SD card.  
+9) Login with `ubuntu` as user and password.  
+10) You will then be prompted to change default ubuntu user password. See optionl steps for how to create a new user, delete default ubuntu user and change the hostname.  
+11) Verify available disk space on USB: `df -h`  
+12) Verify 64-bit: `uname -a`    
 
 OPTIONAL:
 1) Add a new user: `sudo adduser jordan`  
