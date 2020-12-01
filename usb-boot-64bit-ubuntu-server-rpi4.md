@@ -5,7 +5,7 @@ Pre-requisites:
 - SD reader
 - USB stick
 - Keyboard
-- Monitor
+- Monitor and mini-HDMI cable
 - Install [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 - Install [SD Card Formatter](https://www.sdcard.org/downloads/formatter/)
 - Download & extract [Ubuntu Server 64-bit for RPI4](https://www.raspberrypi.org/forums/viewtopic.php?t=278791)
