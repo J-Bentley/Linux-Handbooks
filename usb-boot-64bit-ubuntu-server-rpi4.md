@@ -11,14 +11,14 @@ Pre-requisites:
 - Download & extract [Ubuntu Server 64-bit for RPI4](https://www.raspberrypi.org/forums/viewtopic.php?t=278791)
 
 Update Bootloader and enable USB Booting:  
-- Plug SD card into the reader and reader into PC, then Quick-format your SD Card using SD Card Formatter software.
-- Open Raspberry Pi Imager, click "Choose OS", go to Misc Utilities, write "EEPROM Boot Recovery" OS to the SD card.
-- Plug in SD card and monitor. Power on RPI 4, should show a green image on monitor and/or flash green indicator LED's if bootloader update was successful. Red screen if not.
-- Remove SD card from RPI 4, you only need a bootable USB plugged in now!
+- Plug your SD card into the reader and the reader into your PC, then open SD Card Formatter software and Quick-format your SD Card.
+- Open Raspberry Pi Imager, click "Choose OS", go to "Misc Utilities", click "EEPROM Boot Recovery" and select the newly formated SD card. Then, click "Write".
+- Eject the SD card from your PC and plug in your newly imaged SD card, mini-HDMI and power cord to the RPI4. Power on the monitor and RPI 4. Should show a green image on monitor and/or flash green indicator LED's if bootloader update was successful. Red screen if not.
+- Power off RPI4 and remove SD card from RPI 4, you only need a bootable USB plugged in now!
 - ([Source](https://webtechie.be/post/2020-09-29-64bit-raspbianos-on-raspberrypi4-with-usbboot/))  
 
 Install 64-bit Ubuntu Server to RPI4:  
-- Format USB stick with FAT32 using SD Card Formatter software.
+- Plug your USB stick into your PC, then open SD Card Formatter and Quick-format your USB stick.
 - Open Raspberry Pi Imager, click "Choose OS", select custom image and write the extracted 64bit ubuntu server "RPI USB Boot" .img file to the the your formatted USB.
 - Plug in the USB and power on RPI4 without an SD card.
 - Login with `ubuntu` as user and password.
