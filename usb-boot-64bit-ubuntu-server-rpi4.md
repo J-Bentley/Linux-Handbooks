@@ -1,8 +1,8 @@
-By booting from USB instead of SD card, we can increase reliability over time in our storage device and take full advantage of the independant USB 3.1 channel in the RPI 4.
+By booting from USB instead of SD card, we can increase reliability over time in our storage device and take full advantage of the independant USB 3.1 channel in the RPI 4. Also, by installing a 64-bit version of Ubuntu-Server instead of 32-bit, an application can properly utilize the 8GB of RAM in the RPI4!
 
 Pre-requisites: 
-- SD Card
-- SD reader
+- Raspberry Pi 4 8GB model
+- Micro SD Card with reader
 - USB stick
 - Keyboard
 - Monitor and mini-HDMI cable
