@@ -15,7 +15,7 @@ Requisites: Monitor & keyboard.
 - Verify available disk space on USB: `df -h`
 - Verify 64-bit: `uname -a`
 
-OPTIONAL:
+OPTIONAL:  
 Requisites: Monitor & keyboard.
 - Add a new user: `sudo adduser jordan`
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
