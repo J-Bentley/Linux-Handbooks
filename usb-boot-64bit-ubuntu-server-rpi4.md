@@ -1,8 +1,8 @@
 Update Bootloader and enable USB BOOT:  
 Requisites: SD Card.
 - Write "EEPROM Boot Recovery" image to an SD card via [Raspberry Pi Imager](https://www.raspberrypi.org/software/). ([Source](https://webtechie.be/post/2020-09-29-64bit-raspbianos-on-raspberrypi4-with-usbboot/))
-- Start RPI, should show green screen and flash green LED's if update was successful and USB booting is now enabled as a feature.
-- Remove SD card from RPI4, only need a bootable USB plugged in now!
+- Start RPI, should show a green screen on monitor and/or flash green LED's if update was successful and USB booting is now enabled as a feature.
+- Remove SD card from RPI4, you only need a bootable USB plugged in now!
 
 Install 64-bit Ubuntu Server to RPI4:  
 Requisites: Monitor & keyboard.
@@ -23,3 +23,5 @@ Requisites: Monitor & keyboard.
 - Verify sudo priviledges of new user & reboot (if RPI4 restarts = success): `sudo reboot`
 - Delete default ubuntu user account: `sudo deluser --remove-home ubuntu`
 - Verify ubuntu user is deleted: `id ubuntu` & verify password is deleted `grep '^ubuntu' /etc/passwd` (no output = success)
+- Type `sudo nano /etc/hostname` and change the default hostname to your preffered hostname.
+- Find any occurance of the default hostname in `/etc/hosts` and change it to what is in `/etc/hostname`.
