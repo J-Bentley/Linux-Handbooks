@@ -13,6 +13,6 @@ Requisites: Monitor & keyboard.
 - Add a new user: `sudo adduser jordan`
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
 - login to new user: `su - jordan`
-- verify sudo priviledges with new user (shouldn't return a permissions error): `sudo`
+- verify sudo priviledges with new user (should return a usage error, NOT permissions error): `sudo`
 - delete default ubuntu user account: `sudo deluser --remove-home ubuntu`
 - verify user is deleted: `id ubuntu` & `grep '^ubuntu' /etc/passwd`
