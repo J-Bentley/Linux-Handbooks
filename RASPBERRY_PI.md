@@ -1,9 +1,11 @@
 Update Bootloader and enable USB BOOT:
+Requisites: SD Card.
 - Write "EEPROM Boot Recovery" image to an SD card via [Raspberry Pi Imager](https://www.raspberrypi.org/software/). ([Source](https://webtechie.be/post/2020-09-29-64bit-raspbianos-on-raspberrypi4-with-usbboot/))
 - Start pi, should show green screen and flash green leds if update was successful and USB booting is now enabled as a feature.
 - Remove SD card from RPI4, don't need it again.
 
 Install 64-bit Ubuntu Server to RPI4:
+Requisites: Monitor & keyboard.
 - Format USB via SD Card Formatter.
 - Write [ubuntu server 64 bit for RPI4 image](https://www.raspberrypi.org/forums/viewtopic.php?t=278791) to USB, plug into pi, power on pi.
 - Login with credentials ubuntu:ubuntu 
