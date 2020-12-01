@@ -27,7 +27,7 @@ Install 64-bit Ubuntu Server to RPI4:
 - Verify 64-bit: `uname -a`
 
 OPTIONAL (create a new user, delete default user and change hostname):
-- To do the following steps over SSH, plug in an ethernet cable and issue `ip addr` to find your ip address then log in with ubuntu:ubuntu using PuTTy.
+- To do the following steps over SSH, plug in an ethernet cable and issue `ip addr` to find your ip address then log in with ubuntu as username and the password you just set upon first login using keybord.
 - Add a new user: `sudo adduser jordan`  
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
 - Login to new user: `su - jordan`
