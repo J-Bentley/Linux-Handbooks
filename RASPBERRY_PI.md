@@ -10,7 +10,7 @@ Install 64-bit Ubuntu Server to RPI4:
 - will be prompted to change default ubuntu user password, it doesnt matter, make it easy as we will delete this user account and make our own.
 - Add a new user: `sudo adduser jordan`
 - Make the new user a sudo user: `sudo usermod -aG sudo jordan`
-- login to new user: `su - username`
+- login to new user: `su - jordan`
 - verify sudo priviledges with new user (shouldn't return a permissions error): `sudo`
 - delete default ubuntu user account: `sudo deluser --remove-home ubuntu`
 - verify user is deleted: `id ubuntu` & `grep '^ubuntu' /etc/passwd`
