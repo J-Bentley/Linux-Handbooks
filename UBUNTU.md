@@ -13,6 +13,14 @@ In ```/etc/ssh/sshd_config```:
 For troubleshooting ``` tail -f /var/log/auth.log```  
 Note: Putty profiles are picky, ensure you are loading the profile and saving the changes you make. If you are having problems, this is prob it.    
 
+#### Mount HDD  
+```sudo lsblk```  
+```sudo blkid```  
+```sudo mkfs.ext4 /dev/sdx```  
+```sudo mkdir /hdd```  
+```sudo mount /dev/sdx /hdd```  
+```sudo nano /etc/fstab:```  
+```UUID=XXXX-XXXX-XXXX-XXXX-XXXX     /archive ext4 errors=remount-ro 0 1```  
 #### ALIASES  
 ```sudo nano .bashrc```  
 ```alias updateme='sudo apt-get update && sudo apt-get upgrade -y```  
