@@ -16,11 +16,13 @@ Note: Putty profiles are picky, ensure you are loading the profile and saving th
 #### Mount HDD  
 ```sudo lsblk```  
 ```sudo blkid```  
-```sudo mkfs.ext4 /dev/sdx```  
+```sudo fdisk -l```  
+```sudo mkfs.xfs /dev/sdx```  
 ```sudo mkdir /hdd```  
 ```sudo mount /dev/sdx /hdd```  
 ```sudo nano /etc/fstab:```  
-```UUID=XXXX-XXXX-XXXX-XXXX-XXXX     /archive ext4 errors=remount-ro 0 1```  
+```/dev/sdbx                   /hdd  xfs     defaults         0       0```  
+
 #### ALIASES  
 ```sudo nano .bashrc```  
 ```alias updateme='sudo apt-get update && sudo apt-get upgrade -y```  
@@ -57,9 +59,10 @@ Config: ```sudo nano /etc/ssh/sshd_config```
 ```Mount on reboot via fstab: sudo nano /etc/fstab /dev/sdb```  
 ```/mnt/sdb      ext4        defaults      0       0  ```
   
-#### Headless Tranmission with Web GUI  
+#### Headless Transmission with Web GUI  
 `sudo apt-get install software-properties-common`  
 https://help.ubuntu.com/community/TransmissionHowTo  
+
 #### OPENVPN WITH PIA VPN 
 https://www.thedallemagnes.com/2016/08/26/installing-private-internet-access-with-openvpn-on-ubuntu-server/
    
