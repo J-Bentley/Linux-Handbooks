@@ -39,6 +39,12 @@ Config: ```sudo nano /etc/ssh/sshd_config```
 (Hardening tips can be found in [security-baseline](https://github.com/J-Bentley/Linux-Handbooks/blob/master/Security-baseline.md))  
 * Show config settings:``ssh -T``  
 
+#### Add a new sudo user: 
+``` sudo adduser jordan```  
+``` sudo usermod -aG sudo jordan```  
+#### Change hostname: 
+``` sudo nano /etc/hostname```  
+
 #### UFW
 ```sudo ufw status```  
 ```sudo ufw enable```  
@@ -190,7 +196,7 @@ or
   
 #### MOONLIGHT  
 ```  sudo snap install moonlight-qt```  
-  
+
 #### MISC  
 ``` * df -h: disk usage```  
 ``` pinky: users logged in```  
