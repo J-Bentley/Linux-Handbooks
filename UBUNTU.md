@@ -31,7 +31,14 @@ Note: Putty profiles are picky, ensure you are loading the profile and saving th
 16 :```sudo nano /etc/network/interfaces```     
 18 - 20 :  
  - ```sudo nano /etc/netplan/*-netcfg.yaml```  
+- ```      dhcp4: no```  
+```      addresses:```  
+```        - 192.168.0.2/24```  
+```      gateway4: 192.168.0.1```  
+```      nameservers:```  
+```      addresses: [8.8.8.8]```  
  - ```sudo netplan --debug apply```    
+ - ```sudo ip addr show```  
  
 #### SSH / SFTP
 ```sudo apt-get install openssh-server```  
