@@ -1,11 +1,12 @@
 #### PUBLIC KEY AUTHENTICATION (Putty on Windows)  
 Client: Generate a key pair with puttygen.exe (rsa-ssh2, min bit length: 1024 bits).  
-Client: Copy the public key to clipboard, save private key as `rsa_id-hostname.ppk` and put it somewhere safe that it can stay, then close puttygen. 
+Client: Copy the public key to clipboard, save private key as `rsa_id-hostname.ppk` and put it somewhere safe that it can stay, then close puttygen.  
 Client: Load the private key in the PuTTY profile via `connection> ssh> auth` and make sure to save in `session`!   
 Server: Create `~/.ssh/` directory if doesn't exist and paste the public key in `~/.ssh/authorized_keys`, should be all in one line (ssh-rsa your_public_key)  
 ```chmod 700 ~/.ssh```  
 ```chmod 600 ~/.ssh/authorized_keys```  
 ```chown $USER:$USER ~/.ssh -R```  
+
 Open ```/etc/ssh/sshd_config```:  
 - uncomment ``` AuthorizedKeysFile    /.ssh/authorized_keys```  
 - uncomment and modify line to be ```PasswordAuthentication no```  
