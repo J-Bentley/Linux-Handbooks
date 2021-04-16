@@ -132,7 +132,7 @@ https://www.thedallemagnes.com/2016/08/26/installing-private-internet-access-wit
 ```  /usr/local/bin/noip2```  
 ``` Auto start on boot:https://gist.github.com/NathanGiesbrecht/da6560f21e55178bcea7fdd9ca2e39b5```  
 
-####DUCKDNS
+#### DUCKDNS  
 https://www.duckdns.org/  
 
 #### PLEX 
